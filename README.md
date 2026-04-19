@@ -1,21 +1,34 @@
 # SQL Credential Manager
 
+Built as part of hands-on practice with database design and data handling workflows. 
+
 ## Overview
 
 > A SQLite-based project that models how credential data can be structured, stored, and queried using SQL.
 > This project focuses on schema design, CSV data ingestion, and practical query workflows used to interact with stored data. 
 
-## What I Built
+## Implementation
 
 * Designed a table to store credential entries (site, username, password)
 * Imported structured data from a CSV file into a SQLite database
 * Wrote queries to retrieve, filter, and analyze stored data
 
-## Files
+## Project Structure
 
 * schema.sql – defines the database structure
 * credentials.csv – sample dataset used for import
 * queries.sql – queries for interacting with the data
+
+## How to run
+1. Open SQLite:
+   sqlite3 credentials.db
+2. Create the table:
+   .read schema.sql
+3. Import data:
+   .mode csv
+   .import credentials.csv credentials
+4. Run queries:
+   .read queries.sql
 
 ## Key Concepts Demonstrated
 
