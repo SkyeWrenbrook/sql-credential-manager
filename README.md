@@ -2,7 +2,7 @@
 
 ## Overview
 
-    This project demonstrates how to design and interact with a structured database for storing credential data using SQL and SQLite.
+This project demonstrates how to design and interact with a structured database for storing credential data using SQL and SQLite.
 
 ## What I Built
 
