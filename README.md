@@ -6,22 +6,22 @@ This project demonstrates how to design and interact with a structured database 
 
 ## What I Built
 
-    Designed a table to store credential entries (site, username, password)
-    Imported structured data from a CSV file into a SQLite database
-    Wrote queries to retrieve, filter, and analyze stored data
+* Designed a table to store credential entries (site, username, password)
+* Imported structured data from a CSV file into a SQLite database
+* Wrote queries to retrieve, filter, and analyze stored data
 
 ## Files
 
-    schema.sql – defines the database structure
-    credentials.csv – sample dataset used for import
-    queries.sql – queries for interacting with the data
+* schema.sql – defines the database structure
+* credentials.csv – sample dataset used for import
+* queries.sql – queries for interacting with the data
 
 ## Key Concepts Demonstrated
 
-    Table design and schema creation
-    Data import using .import
-    Querying with SELECT, WHERE, LIKE, and COUNT
-    Data validation and cleanup (identified and removed an unintended header row during import)
+* Table design and schema creation
+* Data import using .import
+* Querying with SELECT, WHERE, LIKE, and COUNT
+* Data validation and cleanup (identified and removed an unintended header row during import)
 
 ## Notes
 
