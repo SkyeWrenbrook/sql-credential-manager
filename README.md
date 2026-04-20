@@ -33,7 +33,7 @@ Built as part of hands-on practice with database design and data handling workfl
    .mode csv
    .import credentials.csv credentials
 ```
-4. Validate the data:
+4. Verify data integrity:
 ```
    SELECT COUNT(*) FROM credentials;
 ```
