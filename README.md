@@ -37,7 +37,7 @@ Built as part of hands-on practice with database design and data handling workfl
 ```
    SELECT COUNT(*) FROM credentials;
 ```
-   If the count is higher than expected, this may indicate the CSV header was imported as a row.
+      If the count is higher than expected, this may indicate the CSV header was imported as a row.
 6. Clean the dataset:
 ```
    DELETE FROM credentials WHERE site = 'site';
