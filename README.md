@@ -21,13 +21,24 @@ Built as part of hands-on practice with database design and data handling workfl
 
 ## How to run
 1. Open SQLite:
+   
    sqlite3 credentials.db
-2. Create the table:
+3. Create the table:
+   
    .read schema.sql
-3. Import data:
+5. Import data:
+   
    .mode csv
    .import credentials.csv credentials
-4. Run queries:
+4. Validate the data:
+
+   SELECT COUNT(*) FROM credentials;
+   If the count is higher than expected, this may indicate the CSV header was imported as a row.
+6. Clean the dataset:
+
+   DELETE FROM credentials WHERE site = 'site';
+7. Run queries:
+   
    .read queries.sql
 
 ## Key Concepts Demonstrated
