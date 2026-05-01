@@ -52,7 +52,11 @@ These observations highlight how data handling and storage decisions directly im
 ```
    SELECT COUNT(*) FROM credentials;
 ```
-      If the count is higher than expected, this may indicate the CSV header was imported as a row.
+
+<img width="342" height="33" alt="csv-import-count-mismatch" src="https://github.com/user-attachments/assets/aaa6e768-f5f4-4a39-84a8-6489b5477d96" />
+      The count returned 71, which was higher than expected.
+      This indicated that the CSV header may have been imported as a row.
+
 6. Clean the dataset:
 ```
    DELETE FROM credentials WHERE site = 'site';
