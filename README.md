@@ -1,17 +1,30 @@
-# SQL Credential Manager
-
-Built as part of hands-on practice with database design and data handling workflows. 
+# SQL Credential Database (SQLite) 
 
 ## Overview
 
-> A SQLite-based project that models how credential data can be structured, stored, and queried using SQL.
-> This project focuses on schema design, CSV data ingestion, and practical query workflows used to interact with stored data. 
+This project is part ofa  larger system exploring how credential data is stored, validated, and analyzed.
+It focuses on the database layer, where structured credential data is imported into SQLite and queried using SQL.
+
+[Related application project](https://github.com/SkyeWrenbrook/credential-manager-cpp)
+
+## System flow
+User input → C++ Application → Structured Data → SQLite Database → SQL Queries → Analysis
+
+This project represents the storage and query layer of the system.
 
 ## Implementation
 
-* Designed a table to store credential entries (site, username, password)
-* Imported structured data from a CSV file into a SQLite database
-* Wrote queries to retrieve, filter, and analyze stored data
+* Designed a schema to store credential data (site, username, password)
+* Imported structured data from a CSV file into a SQLite
+* Queried and analyzed stored data using SQL
+* Identified and corrected a data integrity issue during import (header row treated as data)
+
+## What I Learned
+
+- how database schemas define and constrain stored data
+- how data ingestion (CSV import) can introduce integrity issues
+- how SQL queries can be used to validate and analyze stored information
+- how improperly stored credentials create security risks
 
 ## Project Structure
 
@@ -55,6 +68,12 @@ Built as part of hands-on practice with database design and data handling workfl
 
 ## Notes
 
-Passwords are stored in plaintext in this version for demonstration purposes.
+Credentials are stored in plaintext in this version.
 
-In a real-world system, sensitive data should be encrypted before storage.
+In a real system, this would introduce significant risk and would require:
+
+- hashing or encryption
+- access controls
+- secure database handling practices
+
+This highlights how storage decisions directly impact system security.
