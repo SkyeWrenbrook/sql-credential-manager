@@ -83,3 +83,8 @@ In a real system, this would introduce significant risk and would require:
 - secure database handling practices
 
 This highlights how storage decisions directly impact system security.
+
+
+Copyright © 2026 Rebecca Nyachieo. All rights reserved.
+
+This repository is publicly available for portfolio and educational viewing purposes. No permission is granted to copy, modify, distribute, or commercially use the contents without prior written permission.
